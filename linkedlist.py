@@ -78,8 +78,8 @@ class LinkedList(object):
 
         node = self.head
 
-        while self.node:
-            print self.node.data
+        while (node != None):
+            print node.data
             node = node.next
         
 
@@ -101,7 +101,7 @@ class LinkedList(object):
         current = self.head
         i = 0
 
-        while current != None:
+        while (current != None):
             if (i == idx):
                 return current
             i += 1
